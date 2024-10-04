@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <h1>Calculator by Yashu </h1>
+    <div class="container">
+    
+        
+        <div class="calculator">
+           
+            <div class="display">
+                <div class="display-previous-input" id="pre-input">-</div>
+                <div class="display-input" id="input">0</div>
+            </div>
+            
+            <div class="numbers">
+                <span id="seven" onclick="touch('seven')">7</span>
+                <span id="eight" onclick="touch('eight')">8</span>
+                <span id="nine" onclick="touch('nine')">9</span>
+                <span id="multiply" onclick="touch('multiply')">*</span>
+            </div>
+
+            <div class="numbers">
+                <span id="four" onclick="touch('four')">4</span>
+                <span id="five" onclick="touch('five')">5</span>
+                <span id="six" onclick="touch('six')">6</span>
+                <span id="subtract" onclick="touch('subtract')">-</span>
+            </div>
+
+            <div class="numbers">
+                <span id="one" onclick="touch('one')">1</span>
+                <span id="two" onclick="touch('two')">2</span>
+                <span id="three" onclick="touch('three')">3</span>
+                <span id="add" onclick="touch('add')">+</span>
+            </div>
+
+            <div class="numbers">
+                <span id="point" onclick="touch('point')">.</span>
+                <span id="zero" onclick="touch('zero')">0</span>
+                <span id="divide" onclick="touch('divide')">/</span>
+                <span id="equals-to" onclick="total()">=</span>
+            </div>
+
+            <div class="clear" onclick="erase()">
+                <span>Clear</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
